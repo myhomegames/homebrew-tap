@@ -8,10 +8,37 @@ The cask downloads the `.pkg` installer from [GitHub Releases](https://github.co
 
 ```bash
 brew tap myhomegames/tap
+brew trust myhomegames/tap
 brew install --cask myhomegames-server
 ```
 
 Repository: [github.com/myhomegames/homebrew-tap](https://github.com/myhomegames/homebrew-tap)
+
+### Untrusted tap (Homebrew 5.x+)
+
+Third-party taps are not trusted by default. If install fails with:
+
+```text
+Error: Refusing to load cask myhomegames/tap/myhomegames-server from untrusted tap myhomegames/tap.
+```
+
+trust the tap once (same machine):
+
+```bash
+brew trust myhomegames/tap
+```
+
+Or only this cask:
+
+```bash
+brew trust --cask myhomegames/tap/myhomegames-server
+```
+
+Then run `brew install --cask myhomegames-server` again.
+
+### Apple Silicon (M1/M2/M3)
+
+Use native Homebrew (`/opt/homebrew/bin/brew`), not the Intel install under `/usr/local`, so the cask installs the **arm64** `.pkg`. Check with `brew config`: `HOMEBREW_PREFIX` should be `/opt/homebrew` and macOS should show `arm64`, not `x86_64`.
 
 After installation, open **MyHomeGames** from `/Applications`. Default configuration:
 
