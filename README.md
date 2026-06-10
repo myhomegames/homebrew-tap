@@ -1,4 +1,4 @@
-# myhomegames-homebrewtap
+# homebrew-tap
 
 Official [Homebrew](https://brew.sh/) tap for **MyHomeGames Server** on macOS.
 
@@ -7,9 +7,11 @@ The cask downloads the `.pkg` installer from [GitHub Releases](https://github.co
 ## Install
 
 ```bash
-brew tap myhomegames/myhomegames-homebrewtap
+brew tap myhomegames/tap
 brew install --cask myhomegames-server
 ```
+
+Repository: [github.com/myhomegames/homebrew-tap](https://github.com/myhomegames/homebrew-tap)
 
 After installation, open **MyHomeGames** from `/Applications`. Default configuration:
 
