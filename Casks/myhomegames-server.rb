@@ -3,10 +3,10 @@ cask "myhomegames-server" do
   version "1.2.0"
 
   if Hardware::CPU.arm?
-    sha256 "bf5ca66baec1d6007a0586d836333f54dd901a57b39476271f33e2371ff4e919"
+    sha256 "0bd51e21915540db4623f582db5c02a812aae6c3e44bedf8ec974856c5d4938a"
     url "https://github.com/myhomegames/myhomegames-server/releases/download/1.2.0/MyHomeGames-1.2.0-mac-arm64.pkg"
   else
-    sha256 "c79b6fc066fbe5ceda921e3b2588651612e82798fb545119dab7d591989a1f20"
+    sha256 "12f9c73c30134c90e7463eee695b6d8b82e04651a3b0876da141bf6c8f4685d7"
     url "https://github.com/myhomegames/myhomegames-server/releases/download/1.2.0/MyHomeGames-1.2.0-mac-x64.pkg"
   end
 
