@@ -40,7 +40,9 @@ Then run `brew install --cask myhomegames-server` again.
 
 Use native Homebrew (`/opt/homebrew/bin/brew`), not the Intel install under `/usr/local`, so the cask installs the **arm64** `.pkg`. Check with `brew config`: `HOMEBREW_PREFIX` should be `/opt/homebrew` and macOS should show `arm64`, not `x86_64`.
 
-After installation, open **MyHomeGames** from `/Applications`. Default configuration:
+After installation, open **MyHomeGames** from `/Applications` once. From the first launch it registers for **Open at Login** by default (menu bar / app menu checkbox to disable).
+
+Default configuration:
 
 ```
 /Applications/MyHomeGames.app/Contents/Resources/.env
